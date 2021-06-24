@@ -11,7 +11,7 @@ resource "vault_jwt_auth_backend_role" "devops" {
   backend = vault_jwt_auth_backend.gitlab.path
   role_name = "devops"
   role_type = "jwt"
-  token_policies = [vault_policy.devops.name]
+  token_policies = [vault_policy.devops_policy.name]
   token_explicit_max_ttl = 60
   user_claim = "user_email"
   bound_claims_type = "glob"
