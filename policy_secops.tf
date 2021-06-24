@@ -5,6 +5,10 @@ resource "vault_policy" "secops_policy" {
   {
     capabilities = ["read", "list"]
   }
+
+  path "*" {
+    capabilities = ["list"]
+  }
 EOT
 }
 
