@@ -7,7 +7,7 @@ resource "vault_jwt_auth_backend" "gitlab" {
 }
 
 
-resource "vault_jwt_auth_backend_role" "qaa_tools" {
+resource "vault_jwt_auth_backend_role" "devops" {
   backend = vault_jwt_auth_backend.gitlab.path
   role_name = "devops"
   role_type = "jwt"
