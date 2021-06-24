@@ -11,4 +11,6 @@ and Default policy for any other Vault user.
 * `secrets_structure` - Example configuration for paths where teams will store their KV secrets.
 * `users` - This configuration is only for test to be able to login in the Vault right after configuration was applied.
 
-## Example merge requests
+## Example pull requests
+* `From secops branch` - Request to add more permissions for secops teams
+* `From devops branch` - Request to add GitLab integration to use secretes in GitLab CI
